@@ -1,0 +1,18 @@
+
+.Rightbar{
+    height: 712px;
+    width: 303px;
+    position: fixed;
+    top: 72px;
+    right: 0;
+    background-color:#121212;
+    border-radius: 8px;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding:4px 8px;
+    color:#b3b3b3;
+    font-weight: 600;
+    font-size:14px;
+    margin-bottom: 72px;
+}

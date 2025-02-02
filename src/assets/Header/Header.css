@@ -6,15 +6,17 @@
     font-style: normal;
   }
 
-header, .header_research_container, .header_research_input, .header_loggin, .header_loggin div{
+.header_research_container, .header_research_input, .header_loggin, .header_loggin div{
     display: flex;
 }
 
 header {
     height: 72px;
     width: 100%;
-    background-color: transparent;
-    margin-top: 0;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 header nav {
@@ -22,8 +24,8 @@ header nav {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: end;
     gap: 100px;
+    padding-top: 0;
 }
 
 .header_logo {
@@ -138,6 +140,8 @@ header nav {
     padding-right: 20px;
     align-items: center;
     gap: 10px;
+    position: fixed;
+    right: 0;
 }
 
 .header_loggin_premium {
