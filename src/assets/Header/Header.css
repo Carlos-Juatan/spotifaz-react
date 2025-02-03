@@ -144,6 +144,10 @@ header nav {
     right: 0;
 }
 
+.header_loggin button:hover {
+    transform: scale(1.1);
+}
+
 .header_loggin_premium {
     height: 32px;
     width: 143px;
@@ -171,6 +175,10 @@ header nav {
     color: #919191;
     border: none;
     font-size: 1.2rem;
+}
+
+.header_loggin_download:hover, .header_loggin_bell:hover {
+    color: #d8d8d8;
 }
 
 .header_loggin_account {

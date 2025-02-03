@@ -3,12 +3,179 @@ main {
     background-color:#121212;
     border-radius: 8px;
     display:flex;
-    justify-content: space-between;
     flex-direction: column;
     padding:4px 8px;
     color:#b3b3b3;
     font-weight: 600;
     font-size:14px;
-    margin: 72px 310px 0 325px;
+    margin: 128px 310px 0 325px;
     height: 712px;
+    padding: 0 40px;
+    gap: 20px;
+}
+
+.destacks_model {
+
+}
+
+.destacks_header {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    padding: 0  ;
+    gap: 10px;
+    position: fixed;
+    top: 74px;
+}
+
+.destacks_header button {
+    height: 40px;
+    padding: 0 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #353535;
+    color: #fff;
+}
+
+.destacks_header button:hover {
+    cursor: pointer;
+    background-color: #7a7a7a;
+}   
+
+.destacks_header #btn1 {    
+    background-color: #fff;
+    color: #000;
+}
+
+.destacks_container {
+    height: 216px;
+}
+
+.destacks_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    gap: 10px;
+}
+
+.destacks_content .card {
+    height: 48px;
+    display: flex;  
+    align-items: center;
+    border: none;
+    gap: 10px;
+    border-radius: 8px;
+    background-color: #353535;
+    color: #fff;
+}
+
+.destacks_content .card:hover {
+    cursor: pointer;
+    background-color: #4b4b4b;
+}
+
+.destacks_content .card img {
+    height: 48px;
+    width: 48px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.Recently_played {
+    height: 236px;
+    color: #fff;
+}
+
+.albuns_list_top {
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.albuns_list_top h1 {
+    font-size: 1.3rem;
+}
+
+.albuns_list_top h1:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.albuns_list_top button {
+    background-color: transparent;
+    color: #b3b3b3;
+    border: none;
+} 
+
+.albuns_list_top button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.Recently_played_list_cards {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.Recently_played_list_cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    font-size: .9rem;
+    width: 109px;
+    max-width: 109px;
+}
+
+.Recently_played_list_cards .card {
+    width: 133px;
+    height: 180px;
+    background-color: transparent;
+    border: none;
+    color: #dddddd;
+    text-align: left;
+}
+
+.Recently_played_list_cards .card img {
+    height: 109px;
+    width: 109px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.albuns_list {
+    height: 284px;
+}
+
+.albuns_list_cards {
+    height: 228px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.albuns_list_cards .card {
+    width: 177px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+}
+
+.albuns_list_cards .card:hover {
+    cursor: pointer;
+    background-color: #353535;
+}
+
+.albuns_list_cards .card img {
+    height: 154px;
+    width: 154px;
+    border-radius: 8px;
 }
