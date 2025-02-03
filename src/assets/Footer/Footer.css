@@ -1,9 +1,15 @@
 
-.footer {
-    height: 72px;
-    width: 100%;
+footer {
+    height: 600px;
+    margin: 0 310px 0 325px;
+    color: #a9a9a9;
     background-color: #000;
-    position: fixed;
-    bottom: 0;
-    z-index: 1;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+footer h1 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }

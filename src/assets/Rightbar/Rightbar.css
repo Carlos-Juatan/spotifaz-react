@@ -1,5 +1,5 @@
 
-.Rightbar{
+.Rightbar {
     height: 712px;
     width: 303px;
     position: fixed;
@@ -8,11 +8,16 @@
     background-color:#121212;
     border-radius: 8px;
     display:flex;
-    justify-content: space-between;
     flex-direction: column;
     padding:4px 8px;
-    color:#b3b3b3;
+    color:#dcdcdc;
     font-weight: 600;
     font-size:14px;
     margin-bottom: 72px;
+    align-items: center ;
+    padding-top: 40px;
+}
+
+.Rightbar h1 {
+    font-size: 1.5rem;
 }

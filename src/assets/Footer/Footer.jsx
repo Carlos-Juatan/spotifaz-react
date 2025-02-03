@@ -1,51 +1,29 @@
 import React from "react";
 import './Footer.css';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShuffle, faBackwardStep, faPause, faForwardStep, faRepeat, faMicrophoneLines, faBars, faMobile, faVolumeLow, faWindowMaximize, faUpRightAndDownLeftFromCenter } from '@fortawesome/free-solid-svg-icons';
-import { faCirclePlay } from '@fortawesome/free-regular-svg-icons';
-
 const Footer = () => {
     return (
-        <div className="footer">
-            <div className="music_details">
-                <button>
-                    {/* img */}
-                    <div className="Placeholder"></div>
-                </button>
-                <div className="text">
-                    <h1>music tilte</h1>
-                    <h3>artist name</h3>
-                </div>
-                <div className="save_music">
-                    <button><h1>+</h1></button>
-                </div>
-            </div>
-            <div className="player">
-                <div>
-                    <button><FontAwesomeIcon icon={faShuffle} /></button>
-                    <button><FontAwesomeIcon icon={faBackwardStep} /></button>
-                    <button className="pause"><FontAwesomeIcon icon={faPause} /></button>
-                    <button><FontAwesomeIcon icon={faForwardStep} /></button>
-                    <button><FontAwesomeIcon icon={faRepeat} /></button>
-                </div>
-                <div>
-                    <h3>00:00</h3>
-                    <progress value={20} max={100}></progress>
-                    <h3>00:00</h3>
-                </div>
-            </div>
-            <div className="configs">
-                <button><FontAwesomeIcon icon={faCirclePlay} /></button>
-                <button><FontAwesomeIcon icon={faMicrophoneLines} /></button>
-                <button><FontAwesomeIcon icon={faBars} /></button>
-                <button><FontAwesomeIcon icon={faMobile} /></button>
-                <button><FontAwesomeIcon icon={faVolumeLow} /></button>
-                <progress value={50} max={100}></progress>
-                <button><FontAwesomeIcon icon={faWindowMaximize} /></button>
-                <button><FontAwesomeIcon icon={faUpRightAndDownLeftFromCenter} /></button>
-            </div>
-        </div>  
+        <footer>
+            <h1>Imersão Alura - Front-end 2° Edição</h1>
+            <p>
+                Inspirado pela 2ª edição do desafio de front-end da Alura, desenvolvi este projeto com o objetivo de criar um site React o mais fiel possível ao Spotify.
+                <br />
+                <br />
+                Este foi meu primeiro contato com React. Antes da imersão, meu conhecimento se limitava a HTML, CSS e conceitos básicos de programação, adquiridos através do desenvolvimento de jogos em C#. Essa experiência me proporcionou uma melhor compreensão de JavaScript e sua lógica.
+                <br />
+                <br />
+                Já planejava iniciar meus estudos em JavaScript e React, e a imersão da Alura surgiu no momento perfeito.
+                <br />
+                <br />
+                Apesar de não ter conseguido finalizar o projeto a tempo, meu objetivo era implementar o player inferior, a barra lateral direita com detalhes da música em reprodução, a responsividade e funcionalidades extras.
+                <br />
+                <br />
+                Mesmo com o desafio de um projeto ambicioso, a experiência me proporcionou um entendimento sólido de React, tecnologia que pretendo utilizar em todos os meus projetos web daqui para frente.
+                <br />
+                <br />
+                Agradeço à equipe da Alura pelo trabalho incrível e espero encontrá-los nas próximas imersões!
+            </p>
+        </footer> 
     );
 }
 

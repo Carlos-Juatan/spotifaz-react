@@ -1,0 +1,53 @@
+
+
+.albuns_list {
+    height: 284px;
+}
+
+.albuns_list_cards {
+    height: 228px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.albuns_list_cards .card {
+    width: 177px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    color: #898989;
+    gap: 10px;
+    text-align: left;
+}
+
+.albuns_list_cards .card:hover {
+    cursor: pointer;
+    background-color: #353535;
+}
+
+.albuns_list_cards .card img {
+    height: 154px;
+    width: 154px;
+    border-radius: 8px;
+}
+
+.carrossel-horizontal {
+    height: 228px; /* Altura fixa para o carrossel */
+    overflow-x: auto; /* Habilita a rolagem horizontal */
+    display: flex;
+    flex-direction: row;
+}
+
+.carrossel-horizontal::-webkit-scrollbar {
+    display: none; /* Oculta a barra de rolagem no Webkit */
+}
+
+.carrossel-horizontal {
+    -ms-overflow-style: none; /* Oculta a barra de rolagem no IE e Edge */
+    scrollbar-width: none; /* Oculta a barra de rolagem no Firefox */
+}

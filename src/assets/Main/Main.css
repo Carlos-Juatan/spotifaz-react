@@ -8,7 +8,7 @@ main {
     color:#b3b3b3;
     font-weight: 600;
     font-size:14px;
-    margin: 128px 310px 0 325px;
+    margin: 128px 310px 420px 325px;
     height: 712px;
     padding: 0 40px;
     gap: 20px;
@@ -22,10 +22,12 @@ main {
     height: 56px;
     display: flex;
     align-items: center;
-    padding: 0  ;
+    padding: 0;
     gap: 10px;
     position: fixed;
-    top: 74px;
+    top: 72px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
 }
 
 .destacks_header button {
@@ -117,7 +119,6 @@ main {
     overflow-y: auto;
     display: flex;
     flex-direction: row;
-    gap: 15px;
 }
 
 .Recently_played_list_cards .card {
@@ -126,17 +127,15 @@ main {
     align-items: start;
     gap: 10px;
     font-size: .9rem;
-    width: 109px;
-    max-width: 109px;
-}
-
-.Recently_played_list_cards .card {
     width: 133px;
     height: 180px;
     background-color: transparent;
     border: none;
     color: #dddddd;
     text-align: left;
+    padding: 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .Recently_played_list_cards .card img {
@@ -144,6 +143,11 @@ main {
     width: 109px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+}
+
+.Recently_played_list_cards .card:hover {
+    cursor: pointer;
+    background-color: #353535;
 }
 
 .albuns_list {
@@ -162,11 +166,13 @@ main {
     padding: 0 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-top: 10px;
     background-color: transparent;
     border: none;
     border-radius: 8px;
+    color: #898989;
+    gap: 10px;
+    text-align: left;
 }
 
 .albuns_list_cards .card:hover {
@@ -179,3 +185,49 @@ main {
     width: 154px;
     border-radius: 8px;
 }
+
+
+
+
+
+
+
+
+
+/* #################################################################################################### */
+
+.Recently_played_list_cards::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .Recently_played_list_cards::-webkit-scrollbar-track {
+    background: #2a2a2a;
+  }
+  
+  .Recently_played_list_cards::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+  
+  .Recently_played_list_cards::-webkit-scrollbar-thumb:hover {
+    background: #aeaeae;
+  }
+
+/* #################################################################################################### */
+
+.albuns_list_cards::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .albuns_list_cards::-webkit-scrollbar-track {
+    background: #2a2a2a;
+  }
+  
+  .albuns_list_cards::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+  
+  .albuns_list_cards::-webkit-scrollbar-thumb:hover {
+    background: #aeaeae;
+  }
