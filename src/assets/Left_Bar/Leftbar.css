@@ -3,7 +3,6 @@
     height: 712px;
     width: 303px;
     position: fixed;
-    top: 72px;
     left: 0;
     background-color:#121212;
     border-radius: 8px;
@@ -15,4 +14,174 @@
     font-weight: 600;
     font-size:14px;
     margin-left: 15px;
+}
+
+.leftbar_menu {
+    width: 100%;
+}
+
+.leftbar_header {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+.leftbar_header div {
+    width: 253px;
+    display: flex;
+    gap: 10px;
+}
+
+.leftbar_header div button{
+    height: 32px;
+    width: 32px;
+    background-color: transparent;
+    color: #a4a4a4;
+    border: none;
+    font-size: 1rem;
+    gap: 10px;
+    align-items: center;
+}
+
+.leftbar_header div button:hover {
+    cursor: pointer;
+    color: #dddddd;
+}
+
+.leftbar_header div #leftbar_header_Library_btn{
+    width: 142px;
+    display: flex;
+    margin-right: 40px;
+}
+
+.leftbar_header div #leftbar_header_Library_btn svg{
+    font-size: 1.5rem;
+}
+
+.leftbar_header div #leftbar_header_Library_btn h2 {
+    font-weight: 600;
+}
+
+.leftbar_Options {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.leftbar_Options div {
+    height: 32px;
+    display: flex;
+    gap: 8px;
+}
+
+.leftbar_Options div button {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #2b2b2b;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.leftbar_Options div button:hover {
+    background-color: #404040;
+}
+
+.leftbar_playlists {
+    height: 100%;
+    width: 100%;
+}
+
+.leftbar_research {
+    height: 34px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftbar_research button {
+    display: flex;
+    background-color: transparent;
+    color: #b3b3b3;
+    border: none;
+    gap: 5px;
+}
+
+.leftbar_research button svg {
+    font-size: 1rem;
+}
+
+.leftbar_research #btn_research_library {
+    width: 188px;
+    background-color: #404040;
+    border-radius: 8px;
+    height: 32px;
+    padding: 5px;
+    align-items: center;
+}
+
+.leftbar_research #btn_research_library input {
+    background-color: transparent;
+    border: none;
+    color: #b3b3b3;
+    outline: none;
+    /* ##################################################################################################
+    display: none;
+    */
+}
+
+.leftbar_research button svg, .leftbar_research button h3{
+    cursor: pointer;
+}
+
+.leftbar_research #btn1:hover, .leftbar_research #btn2:hover {
+    color: #dddddd;
+}
+
+.leftbar_research #btn2:hover {
+    transform: scale(1.1);
+}
+
+.Cards_container {
+    padding: 10px;
+}
+
+.leftbar_playlists .card {
+    height: 64px;
+    width: 269px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.leftbar_playlists .card:hover {
+    background-color: #2b2b2b;
+    cursor: pointer;
+}
+
+.leftbar_playlists .card img {
+    height: 48px;
+    width: 48px;
+    border-radius: 8px;
+}
+
+.leftbar_playlists .card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+}
+
+.leftbar_playlists .card div h1 {
+    font-size: .9rem;
+    font-weight: 300;
+    color: #dddddd;
+}
+
+.leftbar_playlists .card div h3 {
+    font-weight: 100;
 }
