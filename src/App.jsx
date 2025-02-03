@@ -26,8 +26,6 @@ function App() {
     fetchData();
   }, []);
 
-  console.log(data.playlists[0]);
-
   return (
     <body>
       <Header/>
