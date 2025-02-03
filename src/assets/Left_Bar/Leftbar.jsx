@@ -9,7 +9,7 @@ function Leftbar({ data }) {
     const playlists = data.playlists;
   
     return (
-        <div class="leftbar">
+        <div className="leftbar">
             <div>
                 <div>
                     <button>
@@ -41,16 +41,12 @@ function Leftbar({ data }) {
             </div>
 
             <div className="Cards_container">
-                {/* Render Playlists */}
-                {playlists.map((playlist) => (
-                    <div className="card">
-                        <button>
-                            <img src={playlist.imgUrl} alt={playlist.name} />
-                            <div>
-                                <p>{playlist.description}</p>
-                                <h4>{playlist.name}</h4>
-                            </div>
-                        </button>
+                {/* ############### Render Playlists ####################*/}
+                {playlists?.length > 0 && playlists.map((playlist) => (
+                    <div className="card" key={playlist.id}> 
+                        <img src={playlist.imgUrl} alt={playlist.name} /> 
+                        <h4>{playlist.name}</h4> 
+                        <p>{playlist.description}</p> 
                     </div>
                 ))}
             </div>

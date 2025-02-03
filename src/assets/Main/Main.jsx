@@ -23,7 +23,8 @@ function Leftbar({ data }) {
                     <button><h2>Show all</h2></button>
                 </div>
                 <div className="albuns_list_cards">
-                    {destacks.map((destacks) => (
+                    {/* ############### Render Recently played ####################*/}
+                    {destacks?.length > 0 && destacks.map((destacks) => (
                         <button className="card">
                             <img src={destacks.imgUrl} alt={destacks.name} />
                             <h4>{destacks.name}</h4>
@@ -37,7 +38,8 @@ function Leftbar({ data }) {
                     <button><h2>Show all</h2></button>
                 </div>
                 <div className="albuns_list_cards">
-                    {destacks.map((destacks) => (
+                    {/* ############### Render Made For carlos juatan ####################*/}
+                    {destacks?.length > 0 && destacks.map((destacks) => (
                         <button className="card">
                             <img src={destacks.imgUrl} alt={destacks.name} />
                             <h4>{destacks.name}</h4>
@@ -51,7 +53,8 @@ function Leftbar({ data }) {
                     <button><h2>Show all</h2></button>
                 </div>
                 <div className="albuns_list_cards">
-                    {destacks.map((destacks) => (
+                    {/* ############### Render Your favorite artists ####################*/}
+                    {destacks?.length > 0 && destacks.map((destacks) => (
                         <button className="card">
                             <img src={destacks.imgUrl} alt={destacks.name} />
                             <h4>{destacks.name}</h4>
