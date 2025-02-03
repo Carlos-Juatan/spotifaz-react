@@ -1,0 +1,78 @@
+{
+    "data": {
+        "playlists": [
+            {
+                "id":"",
+                "name":"Liked Songs",
+                "description":"Playlist•74 songs",
+                "imgUrl":"public/images/likedSongs.png"
+            },
+            {
+                "id":"",
+                "name":"Viagem Musical",
+                "description":"Playlist•Woods Kingdom",
+                "imgUrl":"public/images/playlist-1.png"
+            },
+            {
+                "id":"",
+                "name":"Feel Good Groves",
+                "description":"Playlist•Shadow Knight",
+                "imgUrl":"public/images/playlist-2.jpg"
+            },
+            {
+                "id":"",
+                "name":"Cosmic Dreams",
+                "description":"Playlist•Nameless Musician",
+                "imgUrl":"public/images/playlist-3.jpg"
+            },
+            {
+                "id":"",
+                "name":"Top Hits",
+                "description":"Playlist•Summer Hits",
+                "imgUrl":"public/images/playlist-4.jpg"
+            }
+        ],
+        "destacks": [
+            {
+                "id":"",
+                "name":"Top Hits",
+                "imgUrl":"public/images/playlist-4.jpg"
+            },
+            {
+                "id":"",
+                "name":"Viagem Musical",
+                "imgUrl":"public/images/playlist-1.png"
+            },
+            {
+                "id":"",
+                "name":"Feel Good Groves",
+                "imgUrl":"public/images/playlist-2.jpg"
+            },
+            {
+                "id":"",
+                "name":"Cosmic Dreams",
+                "imgUrl":"public/images/playlist-3.jpg"
+            },
+            {
+                "id":"",
+                "name":"Liked Songs",
+                "imgUrl":"public/images/likedSongs.png"
+            },
+            {
+                "id":"",
+                "name":"This is Linkin Park",
+                "imgUrl":"public/images/playlist-5.jpg"
+            },
+            {
+                "id":"",
+                "name":"Akon - Best Songs",
+                "imgUrl":"public/images/playlist-6.jpg"
+            },
+            {
+                "id":"",
+                "name":"Imagine Dragons",
+                "imgUrl":"public/images/playlist-7.jpg"
+            }
+        ]
+    }
+}

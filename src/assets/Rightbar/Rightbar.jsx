@@ -1,7 +1,7 @@
 import React from "react";
 import './Rightbar.css';
 
-const Rightbar = () => {
+function Rightbar({ data }) {
     return (
         <div class="Rightbar">
             

@@ -1,7 +1,7 @@
 import React from "react";
 import './Main.css';
 
-const Leftbar = () => {
+function Leftbar({ data }) {
     return (
         <main>
 
