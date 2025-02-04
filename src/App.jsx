@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css'
-import UseFetchData from './assets/Fetch/Fetch';
-import Header from './assets/Header/Header';
-import Leftbar from './assets/Left_Bar/Leftbar';
-import Main from './assets/Main/Main';
-import Rightbar from './assets/Rightbar/Rightbar';
-import Footer from './assets/Footer/Footer';
+import UseFetchData from './componentes/Fetch/Fetch';
+import Header from './componentes/Header/Header';
+import Leftbar from './componentes/Left_Bar/Leftbar';
+import Main from './componentes/Main/Main';
+import Rightbar from './componentes/Rightbar/Rightbar';
+import Footer from './componentes/Footer/Footer';
 
 function App() {
   

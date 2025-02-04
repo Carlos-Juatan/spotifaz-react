@@ -4,30 +4,42 @@ main {
     border-radius: 8px;
     display:flex;
     flex-direction: column;
-    padding:4px 8px;
     color:#b3b3b3;
     font-weight: 600;
     font-size:14px;
-    margin: 128px 310px 420px 325px;
+    margin: 72px 310px 420px 325px;
     height: 712px;
-    padding: 0 40px;
-    gap: 20px;
+    position: relative;
 }
 
 .destacks_model {
+    width: 100%;
+    height: 280px;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(0, 93, 60, 0.5), transparent);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    z-index: 0;
 
+}
+
+main .main_content {
+    padding: 56px 40px 0 40px;
+    gap: 20px;
 }
 
 .destacks_header {
     height: 56px;
     display: flex;
     align-items: center;
-    padding: 0;
+    padding: 0 40px;
     gap: 10px;
     position: fixed;
     top: 72px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, .5);
+    width: calc(100% - 635px);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    z-index: 2;
 }
 
 .destacks_header button {
@@ -67,8 +79,9 @@ main {
     border: none;
     gap: 10px;
     border-radius: 8px;
-    background-color: #353535;
+    background-color: #5555557a;
     color: #fff;
+    z-index: 1;
 }
 
 .destacks_content .card:hover {

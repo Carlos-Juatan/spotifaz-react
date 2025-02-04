@@ -32,3 +32,13 @@ e para isso vamos criar uma pasta para o projeto
 
 * nota 2, depois de instalar o react usando 'npm create vite@latest my-app --template react'
     você vai precimar selecionar o react e depois qual linguangem você quer usar typescript, javascript, etc...
+
+
+para usar o fontawsome no projeto basta instalar na pasta do projeto a extensão que você quer usar
+    npm install @fortawesome/fontawesome-solid-svg-icons
+
+e depois voce inporta no arquivo que você quer usar o icone que voce quer do grupo de icones que ele ta
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+
+por ultimo use essa tag no DOM do html para colocar a fonte
+<FontAwesomeIcon icon={faHome} />
