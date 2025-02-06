@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css'
 import UseFetchData from './componentes/Fetch/Fetch';
 import Header from './componentes/Header/Header';
@@ -11,11 +11,17 @@ function App() {
   
   const data = UseFetchData();
 
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSearchChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
   return (
     <div>
-    <Header/>
+    <Header searchTerm={searchTerm} onSearchChange={handleSearchChange} />
     <Leftbar data={data} />
-    <Main data={data} />
+    <Main  searchTerm={searchTerm} data={data} />
     <Rightbar data={data} />
     <Footer/>
     </div>

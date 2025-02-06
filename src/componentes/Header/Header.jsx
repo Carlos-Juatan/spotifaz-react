@@ -5,7 +5,7 @@ import { faHome, faMagnifyingGlass, faBars, faDownload } from '@fortawesome/free
 import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { faSpotify } from '@fortawesome/free-brands-svg-icons';
 
-const Header = () => {
+const Header = ({ searchTerm, onSearchChange }) => {
     return (
         <header>
             <nav>
@@ -25,7 +25,10 @@ const Header = () => {
                         <div className="header_research_input_fyingGlass">
                             <FontAwesomeIcon icon={faMagnifyingGlass} />
                         </div>
-                        <input type="text" placeholder="What do you want to play?" />
+                        <input type="text" placeholder="What do you want to play?" 
+                            value={searchTerm}  // Valor controlado pela prop
+                            onChange={onSearchChange} // Função para atualizar o estado no pai
+                        />
                         <div className="header_research_input_divider"></div>
                         <button className="header_research_input_menu">
                             <span>

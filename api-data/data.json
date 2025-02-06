@@ -73,6 +73,117 @@
                 "name":"Imagine Dragons",
                 "imgUrl":"public/images/playlist-7.jpg"
             }
+        ],
+        "Recently_played": [
+            {
+                "id": "14",
+                "name": "Blinding Lights - The Weeknd",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b273a3eff72f62782fb589a492f9"
+            },
+            {
+                "id": "15",
+                "name": "As It Was - Harry Styles",
+                "imgUrl": "https://i.scdn.co/image/ab67616d00001e02b46f74097655d7f353caab14"
+            },
+            {
+                "id": "16",
+                "name": "Anti-Hero - Taylor Swift",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b273bb54dde68cd23e2a268ae0f5"
+            },
+            {
+                "id": "17",
+                "name": "Flowers - Miley Cyrus",
+                "imgUrl": "https://i.scdn.co/image/ab67616d00001e02cd222052a2594be29a6616b5"
+            },
+            {
+                "id": "18",
+                "name": "Unholy - Sam Smith & Kim Petras",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b273a935e4689f15953311772cc4"
+            },
+            {
+                "id": "19",
+                "name": "About Damn Time - Lizzo",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b273b817e721691aff3d67f26c04"
+            },
+            {
+                "id": "20",
+                "name": "Stay With Me - Calvin Harris",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b2739b93a80dbfd3d789065d7b67"
+            }
+        ],
+        "Made_For_carlos_juatan": [
+            {
+                "id": "21",
+                "name": "Shape of You - Ed Sheeran",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b27383e9b06ccd219248b5301264"
+            },
+            {
+                "id": "22",
+                "name": "Luis Fonsi - despacito",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b273343bd0b686fe428dd9ab6d28"
+            },
+            {
+                "id": "23",
+                "name": "Charlie Brown Jr.  - Só Os Loucos Sabem",
+                "imgUrl": "https://i.scdn.co/image/ab67616d00001e025e7cb9ed84348b98973c823f"
+            },
+            {
+                "id": "24",
+                "name": "Shivers - Ed Sheeran",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b2730f7b2f9672bb7671c6afe350"
+            },
+            {
+                "id": "25",
+                "name": "Dance The Night - Dua Lipa",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b2737dd3ba455ee3390cb55b0192"
+            },
+            {
+                "id": "26",
+                "name": "Heat Waves - Glass Animals",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b273ab9d1ae18b640b7b0ce390d4"
+            },
+            {
+                "id": "27",
+                "name": "Snap - Rosa Linn",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b273927f72f3739f256fb01d1470"
+            }
+        ],
+        "Your_favorite_artists": [
+            {
+                "id": "28",
+                "name": "Taylor Swift",
+                "imgUrl": "https://i.scdn.co/image/ab6761610000e5ebe672b5f553298dcdccb0e676"
+            },
+            {
+                "id": "29",
+                "name": "Drake",
+                "imgUrl": "https://i.scdn.co/image/ab6761610000e5eb4293385d324db8558179afd9"
+            },
+            {
+                "id": "30",
+                "name": "The Weeknd",
+                "imgUrl": "https://i.scdn.co/image/ab6761610000e5eb9e528993a2820267b97f6aae"
+            },
+            {
+                "id": "31",
+                "name": "Bad Bunny",
+                "imgUrl": "https://i.scdn.co/image/ab6761610000e5eb744a4243fb6cc938011a98f4"
+            },
+            {
+                "id": "32",
+                "name": "Dua Lipa",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b273a22a7b828934f83ed9901354"
+            },
+            {
+                "id": "33",
+                "name": "Ed Sheeran",
+                "imgUrl": "https://i.scdn.co/image/ab6761610000e5eb784daff754ecfe0464ddbeb9"
+            },
+            {
+                "id": "34",
+                "name": "Charlie Brown Jr.",
+                "imgUrl": "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO0LuyqI-default.jpg"
+            }
         ]
     }
 }
