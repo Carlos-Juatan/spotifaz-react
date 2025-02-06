@@ -35,7 +35,7 @@ function Leftbar({ searchTerm, data }) {
                 <button><h2>Music</h2></button>
                 <button><h2>Podcasts</h2></button>
             </div>
-            <div className="destacks_model"></div>
+            {(destacks?.length != filteredDestacks?.length) ? <div /> : <div className="destacks_model"></div> }
             <div className="main_content">
                 {destacks?.length != filteredDestacks?.length ? 
                     <div />
@@ -55,7 +55,7 @@ function Leftbar({ searchTerm, data }) {
                 {(filteredRecentlyPlayed?.length > 0 || filteredMadeFor?.length > 0 || filteredArtists?.length > 0) ?
                     <section>
                         {filteredRecentlyPlayed?.length > 0 ?
-                            <div className="Recently_played">
+                            <div className="player_list" id="Recently_played">
                                 <div className="albuns_list_top">
                                     <h1>Recently played</h1>
                                     <button><h2>Show all</h2></button>
@@ -74,7 +74,7 @@ function Leftbar({ searchTerm, data }) {
                             <div />
                         }
                         {filteredMadeFor?.length > 0 ?
-                            <div className="albuns_list made_for_carlos_juatan">
+                            <div className="player_list albuns_list" id="made_for_carlos_juatan">
                                 <div className="albuns_list_top">
                                     <h1>Made For carlos juatan</h1>
                                     <button><h2>Show all</h2></button>
@@ -93,7 +93,7 @@ function Leftbar({ searchTerm, data }) {
                             <div />
                         }
                         {filteredArtists?.length > 0 ?
-                            <div className="albuns_list your_favorite_artists">
+                            <div className="player_list albuns_list"id="your_favorite_artists">
                                 <div className="albuns_list_top">
                                     <h1>Your favorite artists</h1>
                                     <button><h2>Show all</h2></button>
@@ -103,7 +103,10 @@ function Leftbar({ searchTerm, data }) {
                                     {filteredArtists?.map((item) => (
                                         <button className="card" key={item.id}>
                                             <img src={item.imgUrl} alt={item.name} />
-                                            <h4>{item.name}</h4>
+                                            <div>
+                                                <h1>{item.name}</h1>
+                                                <h4>Artist</h4>
+                                            </div>
                                         </button>
                                     ))}
                                 </div>
@@ -113,8 +116,8 @@ function Leftbar({ searchTerm, data }) {
                         }
                     </section>
                     :
-                    <div className="research_not_founded.">
-                        <h1>Research Not Founded</h1>
+                    <div className="research_not_founded">
+                        <h1>Research Not Founded.</h1>
                     </div>
                 }
             </div>

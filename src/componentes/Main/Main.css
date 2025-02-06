@@ -28,6 +28,8 @@ main .main_content {
     gap: 20px;
 }
 
+main .main_content div {}
+
 .destacks_header {
     height: 56px;
     display: flex;
@@ -96,7 +98,11 @@ main .main_content {
     border-bottom-left-radius: 8px;
 }
 
-.Recently_played {
+.player_list {
+    margin-top: 40px;
+}
+
+#Recently_played {
     height: 236px;
     color: #fff;
 }
@@ -169,7 +175,7 @@ main .main_content {
 }
 
 .albuns_list_cards {
-    height: 228px;
+    height: 238px;
     overflow-y: auto;
     display: flex;
     flex-direction: row;
@@ -189,6 +195,15 @@ main .main_content {
     text-align: left;
 }
 
+.albuns_list_cards .card div h1 {
+    color: #d4d4d4;
+    font-size: 1rem;
+}
+
+.albuns_list_cards .card div h4 {
+    margin-top: 10px;
+}
+
 .albuns_list_cards .card:hover {
     cursor: pointer;
     background-color: #353535;
@@ -198,6 +213,10 @@ main .main_content {
     height: 154px;
     width: 154px;
     border-radius: 8px;
+}
+
+#your_favorite_artists .albuns_list_cards .card img{
+    border-radius: 100%;
 }
 
 .research_not_founded {
