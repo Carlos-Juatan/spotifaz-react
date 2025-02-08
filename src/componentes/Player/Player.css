@@ -6,4 +6,151 @@
     position: fixed;
     bottom: 0;
     z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.Player .music_details, .Player .player_music, .Player .configs {
+    display: flex;
+}
+
+.Player .music_details {
+    width: 30%;
+    left: 0;
+    align-items: center;
+    gap: 20px;
+    padding-left: 10px;
+}
+
+.Player .music_details .music_img_button {
+    height: 56px;
+    width: 56px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.Player .music_details .music_img_button .Placeholder{
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #b3b3b3;
+}
+
+.Player .music_details .text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.Player .music_details .text h1 {
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.Player .music_details .text h1:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.Player .music_details .text h3 {
+    color: #b3b3b3;
+    font-size: 0.8rem;
+}
+
+.Player .music_details .text h3:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.Player .music_details .save_music {
+    height: 100%;
+    width: 32px;
+}
+
+.Player .music_details .save_music button {
+    height: 32px;
+    width: 32px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.Player .music_details .save_music button span{
+    margin: 0 auto;
+    text-align: center;
+    color: #b3b3b3;
+    border-radius: 100%;
+    border: #b3b3b3 solid 2px;
+    width: 16px;
+    height: 16px;
+    display: flex; /* Adiciona flexbox para centralizar o ícone */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+.Player .music_details .save_music button span svg {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.Player .player_music {
+    width: 40%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Player .configs {
+    width: 30%;
+    justify-content: end;
+}
+
+/* ##############   Player Music   ###################*/
+
+
+
+
+
+
+/* ##############   configs   ###################*/
+
+.Player .configs {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.Player .configs button {
+    height: 32px;
+    width: 32px;
+    background-color: transparent;
+    border: none;
+    color: #b3b3b3;
+}
+
+.Player .configs button svg {
+    width: 16px;
+    height: 16px;
+}
+
+.Player .configs button:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.Player .configs progress {
+    height: 4px;
+    width: 93px;
+    background-color: #b3b3b3;
+    border: none;
+    appearance: none;
+}
+
+.Player .configs progress::-webkit-progress-value {
+    background-color: #fff; /* Cor da barra de progresso */
+    border-radius: 2px; /* Arredonda as bordas da barra */
 }

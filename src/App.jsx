@@ -6,6 +6,7 @@ import Leftbar from './componentes/Left_Bar/Leftbar';
 import Main from './componentes/Main/Main';
 import Rightbar from './componentes/Rightbar/Rightbar';
 import Footer from './componentes/Footer/Footer';
+import Player from './componentes/Player/Player';
 
 function App() {
   
@@ -24,6 +25,7 @@ function App() {
     <Main  searchTerm={searchTerm} data={data} />
     <Rightbar data={data} />
     <Footer/>
+    <Player />
     </div>
   );
 }

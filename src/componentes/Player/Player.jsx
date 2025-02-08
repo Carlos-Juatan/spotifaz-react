@@ -2,14 +2,14 @@ import React from "react";
 import './Player.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShuffle, faBackwardStep, faPause, faForwardStep, faRepeat, faMicrophoneLines, faBars, faMobile, faVolumeLow, faWindowMaximize, faUpRightAndDownLeftFromCenter } from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faShuffle, faBackwardStep, faPause, faForwardStep, faRepeat, faMicrophoneLines, faBars, faMobile, faVolumeLow, faWindowMaximize, faUpRightAndDownLeftFromCenter } from '@fortawesome/free-solid-svg-icons';
 import { faCirclePlay } from '@fortawesome/free-regular-svg-icons';
 
 const Footer = () => {
     return (
         <div className="Player">
             <div className="music_details">
-                <button>
+                <button className="music_img_button">
                     {/* img */}
                     <div className="Placeholder"></div>
                 </button>
@@ -18,10 +18,10 @@ const Footer = () => {
                     <h3>artist name</h3>
                 </div>
                 <div className="save_music">
-                    <button><h1>+</h1></button>
+                    <button> <span><FontAwesomeIcon icon={faPlus} /></span></button>
                 </div>
             </div>
-            <div className="player">
+            <div className="player_music">
                 <div>
                     <button><FontAwesomeIcon icon={faShuffle} /></button>
                     <button><FontAwesomeIcon icon={faBackwardStep} /></button>
