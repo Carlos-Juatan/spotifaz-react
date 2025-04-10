@@ -22,17 +22,21 @@ const Footer = () => {
                 </div>
             </div>
             <div className="player_music">
-                <div>
-                    <button><FontAwesomeIcon icon={faShuffle} /></button>
-                    <button><FontAwesomeIcon icon={faBackwardStep} /></button>
+                <div className="player_music_btns">
+                    <div className="player_music_left">
+                        <button><FontAwesomeIcon icon={faShuffle} /></button>
+                        <button><FontAwesomeIcon icon={faBackwardStep} /></button>
+                    </div>
                     <button className="pause"><FontAwesomeIcon icon={faPause} /></button>
-                    <button><FontAwesomeIcon icon={faForwardStep} /></button>
-                    <button><FontAwesomeIcon icon={faRepeat} /></button>
+                    <div className="player_music_right">
+                        <button><FontAwesomeIcon icon={faForwardStep} /></button>
+                        <button><FontAwesomeIcon icon={faRepeat} /></button>
+                    </div>
                 </div>
-                <div>
-                    <h3>00:00</h3>
+                <div className="player_music_duration_bar">
+                    <h3>0:00</h3>
                     <progress value={20} max={100}></progress>
-                    <h3>00:00</h3>
+                    <h3>0:00</h3>
                 </div>
             </div>
             <div className="configs">

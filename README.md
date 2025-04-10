@@ -1,44 +1,110 @@
-# Spotfy_Bolado_React
- Projeto em react copiando o site da spotfy com base na imersão alura front-end
+![Logo of the project](public/icons/Spotifaz.png)
+
+# SpotiFaz - A Spotify Clone (Educational Project)
+
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+
+This is a Spotify interface clone project developed during a front-end immersion event by Alura. The main intention of this project was to study and practice React technologies, exploring component creation, state management, and the construction of dynamic and responsive user interfaces.
+
+## Visual Showcase
+
+Below are some key views of the SpotiFaz application's main features and interfaces:
+
+### Homepage
+![SpotiFaz Homepage](./public/images/showcase/home.png)
+_(A view of the main page with the simulated list of songs and albums.)_
+
+### Navigation
+![Navigation demonstration between sections](./public/images/showcase/homepage.gif)
+_(GIF showing the navigation between different parts of the application.)_
+
+### Search for Music, Artists, Albums, and Playlists
+![Search functionality demonstration](./public/images/showcase/researsh.gif)
+_(GIF illustrating the search functionality for songs, artists, albums, and playlists.)_
 
 
- para instalar o simulador de back-end basta digitar no cmd
-    npm i json-server -g
+## Technologies Used
 
-para que o json-server emule o back-end, crie um arquivo .json e no cmd digite
-    json-server --watch {caminho para o arquivo json} --port {qualquer porta}
-    
-    ex:
-        json-server --watch api-artists/artists.json --port 3001
+- **Front-end:**
+    - React
+    - HTML5
+    - CSS3
+    - JavaScript (ES6+)
+    - Vite (as a build tool and development environment)
+- **Back-end (Simulated):**
+    - Node.js
+    - json-server (to emulate the API)
 
-para criar um projeto em React digite no cmd
-    npx create-react-app meu-app
+## Services Used
 
-para iniciar o projeto de pois de instalado basta digitar no cmd
-    npm start
+- **GitHub:** Used for code versioning, collaboration, and hosting the project repository.
+- **json-server:** Used to simulate a REST API for development purposes. It provides a quick and easy way to mock backend endpoints without needing a full-fledged server.
 
-# esse método está causando bugs por conta da versão 19 do react
-para corrigir isso usaremos o vine para instalar o react 18
-    (podemos mudar para o react 19 depois de instalado)
+## How to Run the Project
 
-e para isso vamos criar uma pasta para o projeto
-    e no cmd digitar
-        npm create vite@latest my-app --template react
-        cd my-app
-        npm install
-        npm run dev
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/Carlos-Juatan/spotifaz-react
+    ```
 
-* nota que "my-app" é o nome do projeto e pode ser alterado
+2.  **Navigate to the project folder:**
+    ```bash
+    cd spotifaz-react
+    ```
 
-* nota 2, depois de instalar o react usando 'npm create vite@latest my-app --template react'
-    você vai precimar selecionar o react e depois qual linguangem você quer usar typescript, javascript, etc...
+3.  **Install dependencies:**
+    With npm:
+    ```bash
+    npm install
+    ```
 
+4.  **Run the Vite development server:**
+    ```bash
+    npm run dev
+    ```
 
-para usar o fontawsome no projeto basta instalar na pasta do projeto a extensão que você quer usar
-    npm install @fortawesome/fontawesome-solid-svg-icons
+5.  **Install json-server globally (if not already installed):** With npm:
+    ```bash
+    npm install -g json-server
+    ```
 
-e depois voce inporta no arquivo que você quer usar o icone que voce quer do grupo de icones que ele ta
-import { faHome } from '@fortawesome/free-solid-svg-icons';
+6.  **Start the json-server (in another terminal):**
+    ```bash
+    json-server --watch api-data/data.json --port 3001
+    ```
 
-por ultimo use essa tag no DOM do html para colocar a fonte
-<FontAwesomeIcon icon={faHome} />
+7.  **Open the project in your browser:**
+    Vite usually starts the project at `http://localhost:5173/` or another available port. Check the output in your terminal for the correct address.
+
+Now, the Spotify clone (SpotiFaz) should be running in your browser, consuming the simulated data from `json-server`.
+
+## Main Features
+
+* **Browse Simulated Music:** Users can navigate through a simulated library of songs and albums.
+* **Play/Pause Functionality:** Basic controls to play and pause the currently selected track.
+* **Track Information Display:** Shows the title and artist of the playing song.
+* **Simple Layout:** A clean and intuitive user interface inspired by Spotify's design.
+* **Responsive Design:** The layout adapts to different screen sizes (desktop and mobile).
+* **Data Fetched from Simulated Backend:** Utilizes `json-server` to load and display mock music data.
+* **Simulated Search Functionality:** Allows users to search for songs, albums, and artists within the simulated library.
+* **Basic Playlist Creation and Management:** Enables users to create new playlists and add/remove songs (functionality may be limited in this educational clone).
+
+## Versioning
+
+1.0.0.0
+
+## Author
+
+This "SpotiFaz" project was developed by [Your Name] as an educational project during Alura's front-end immersion event.
+
+You can find more of my projects and contributions on my GitHub profile: https://github.com/Carlos-Juatan/
+
+Feel free to explore the code and reach out if you have any questions or suggestions!
+
+## License
+
+This project is licensed under the MIT License. See the [MIT-License](https://github.com/Carlos-Juatan/spotifaz-react/blob/main/LICENSE) file for more information regarding the terms and conditions under which this software is licensed.

@@ -10,6 +10,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 15px;
+    padding-bottom: 10px;
 }
 
 .Player .music_details, .Player .player_music, .Player .configs {
@@ -79,6 +80,10 @@
     cursor: pointer;
 }
 
+.Player .music_details .save_music button:hover {
+    transform: scale(1.1);
+}
+
 .Player .music_details .save_music button span{
     margin: 0 auto;
     text-align: center;
@@ -110,9 +115,83 @@
 
 /* ##############   Player Music   ###################*/
 
+.Player .player_music {
+    width: 585px;
+    color: #b3b3b3;
+    row-gap: 5px;
+}
 
 
+.Player .player_music .player_music_btns {
+    width: 100%;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
+.Player .player_music .player_music_btns .player_music_left,
+.Player .player_music .player_music_btns .player_music_right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Player .player_music .player_music_btns button {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background-color: transparent;
+    color: #b3b3b3;
+    cursor: pointer;
+}
+
+.Player .player_music .player_music_btns button:hover{
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.Player .player_music .player_music_btns .pause {
+    background-color: #fff;
+    color: #000;
+    border-radius: 100%;
+}
+
+.Player .player_music .player_music_btns .pause:hover{
+    background-color: #e6e6e6;
+    color: #000;
+}
+
+.Player .player_music .player_music_btns button svg {
+    height: 16px;
+    width: 16px;
+}
+
+.Player .player_music .player_music_duration_bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.Player .player_music .player_music_duration_bar progress {
+    width: 490px;
+    height: 4px;
+    background-color: #b3b3b3;
+    border: none;
+    appearance: none;
+}
+
+.Player .player_music .player_music_duration_bar progress::-webkit-progress-value {
+    background-color: #fff; /* Cor da barra de progresso */
+    border-radius: 2px; /* Arredonda as bordas da barra */
+}
+
+.Player .player_music .player_music_duration_bar h3 {
+    font-size: .7rem;
+}
 
 
 /* ##############   configs   ###################*/
@@ -140,6 +219,7 @@
 .Player .configs button:hover{
     color: #fff;
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 .Player .configs progress {
