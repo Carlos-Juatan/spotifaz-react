@@ -99,7 +99,7 @@ Now, the Spotify clone (SpotiFaz) should be running in your browser, consuming t
 
 ## Author
 
-This "SpotiFaz" project was developed by [Your Name] as an educational project during Alura's front-end immersion event.
+This "SpotiFaz" project was developed by Carlos Juatan as an educational project during Alura's front-end immersion event.
 
 You can find more of my projects and contributions on my GitHub profile: https://github.com/Carlos-Juatan/
 
